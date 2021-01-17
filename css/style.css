@@ -23,6 +23,18 @@ a.principal:hover{
     width: 1200px;
     height: 550px;
 }
+@media screen and (max-width: 768px){
+    .carousel-item img{
+        width: 1200px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 575px){
+    .carousel-item img{
+        width: 1200px;
+        height: 250px;
+    }
+
 .titulos{
     font-weight: bold;
     position:relative;
