@@ -19,6 +19,10 @@ a.principal:hover{
     font-size:1.1em;
     color:#003F74;
 }
+.carousel-item img{
+    width: 1200px;
+    height: 550px;
+}
 .titulos{
     font-weight: bold;
     position:relative;
