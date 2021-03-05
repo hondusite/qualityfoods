@@ -1,40 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Open Sans Condensed";
+}
+h1,h2,h3{
+    font-weight: 700;
+}
 .nav-link{
     font-size:1.2em;
     margin:0 10px;
-   
+    font-weight: 700;
+    color: #00613A !important;
 }
+@media screen and (min-width: 768px){
+    a.active{
+        border-bottom:  5px solid #A90201 !important;
+    }
+}
+
 a.principal:hover{
     color:#00A19B;
     font-weight: 500;
 }
-.carousel-caption{
-    background-color: rgba(255,255,255,0.7);
-    transform:translateY(-45%);
+
+.carousel-inner, .item-service{
+ position: relative;
 }
-.carousel-caption h5{
-    font-size:3em;
-    color:#003F74;
+.inmovil{
+    position: absolute;
+    
+    
+    color:#fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  
+    font-family: "Open Sans Condensed";
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 100%;
+    font-style: normal;
+    text-shadow: 2px 2px 2px #0f0f0f;
 }
+.item-service{
+    margin:0 !important;
+}
+.item-service h5{
+ position: absolute;
+ left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    color:white;
+    font-size: 1.6em;
+    text-shadow: #0f0f0f 3px 3px 2px;
+}
+@media  screen and (min-width: 768px){
+    .inmovil{
+        font-size: 52px;
+    }
+}
+
 .carousel-caption p{
     font-size:1.1em;
     color:#003F74;
 }
 .carousel-item img{
-    width: 1200px;
-    height: 550px;
+    width: 100%;
+    height: 60vh;
 }
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     .carousel-item img{
-        width: 1200px;
-        height: 350px;
+        width: 100%;
+        height: 100vh;
     }
 }
-@media screen and (max-width: 575px){
-    .carousel-item img{
-        width: 1200px;
-        height: 250px;
-    }
-}
+
 .titulos{
     font-weight: bold;
     position:relative;
@@ -77,4 +122,50 @@ img.service{
     color: white;
     font-size: 2em;
     text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+}
+.titulo-principal{
+    height: 25vh;
+    background-image: url('../img/banner3.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.titulo-principal h1{
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    font-size: 3em;
+}
+.lista li{
+    margin-bottom: 20px;
+}
+.peque{
+    width: 100%;
+    height: 300px;
+}
+.peque .carousel-item img{
+    width: 100%;
+    height: 300px;
+}
+.producto{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    position: relative;
+}
+.producto p{
+    color:white;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-shadow: 2px 3px 3px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contactus{
+    background-color: lightgreen;
+}
+.contactus h2, .contactus p{
+    color: #00613A;
 }
